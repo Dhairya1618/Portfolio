@@ -8,9 +8,9 @@ const Projects = () => {
       title: "Hospital Management System using Hyperledger Fabric",
       description: "A secure and decentralized hospital management platform leveraging Hyperledger Fabric blockchain for patient data privacy, access control, and transparent record management.",
       technologies: ["React", "Node.js", "Hyperledger Fabric", "Blockchain"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Dhairya1618/Hyperledger_HealthInsurance.git",
       liveUrl: "#",
-      imageUrl: null
+      imageUrl: "public\hospital-management.png"
     },
     {
       id: 2,
@@ -19,34 +19,34 @@ const Projects = () => {
       technologies: ["Python", "TensorFlow", "Keras", "LSTM", "Transformers"],
       githubUrl: "#",
       liveUrl: "#",
-      imageUrl: null
+      imageUrl: ""
     },
     {
       id: 3,
       title: "NLP for Customer Review Classification",
       description: "A natural language processing solution for classifying customer reviews into sentiment categories, utilizing advanced text preprocessing and machine learning algorithms.",
       technologies: ["Python", "NLTK", "scikit-learn", "Pandas", "NLP"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/ReevaShenoy/Sentiment-Analysis.git",
       liveUrl: "#",
-      imageUrl: null
+      imageUrl: "public\sentiment-analysis.png"
     },
     {
       id: 4,
       title: "Navigation System for the Elderly",
       description: "An accessible navigation system designed to assist elderly users with real-time directions, voice guidance, and user-friendly interfaces for safe and independent travel.",
       technologies: ["React Native", "Google Maps API", "Accessibility", "Mobile"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Dhairya1618/Inclusive-Design-for-Public-Transportation.git",
       liveUrl: "#",
-      imageUrl: null
+      imageUrl: "public\inclusive-navigation-system.png"
     },
     {
       id: 5,
       title: "Task Management System",
       description: "A productivity tool for organizing, tracking, and collaborating on tasks with features like deadlines, notifications, and team management.",
       technologies: ["React", "Firebase", "Material-UI"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Dhairya1618/Task-Management-App-React2.git",
       liveUrl: "#",
-      imageUrl: null
+      imageUrl: "public\task-management-system.png"
     }
   ];
 

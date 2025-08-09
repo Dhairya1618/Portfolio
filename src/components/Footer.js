@@ -11,9 +11,8 @@ const Footer = () => {
             <p>Built with React.js and passion for clean code.</p>
           </div>
           <div className="footer-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="https://www.linkedin.com/in/dhairya-katkoriya-559b341b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Dhairya1618" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
       </div>
