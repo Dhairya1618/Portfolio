@@ -84,6 +84,70 @@
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
+/* Certifications Section */
+.certifications-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.certification-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+}
+
+.certification-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.certification-card p {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status.certified {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.status.in-progress {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+/* Experience Stats */
 .experience-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -113,6 +177,7 @@
   font-size: 1.1rem;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
@@ -132,6 +197,20 @@
     grid-row: unset;
   }
 
+  .certifications-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 10px;
+  }
+
+  .certification-card {
+    padding: 1.5rem;
+  }
+
+  .certifications-title {
+    font-size: 1.6rem;
+  }
+
   .experience-stats {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -143,5 +222,19 @@
 
   .stat h4 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .certification-card {
+    padding: 1rem;
+  }
+
+  .certification-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .certification-card p {
+    font-size: 0.9rem;
   }
 }

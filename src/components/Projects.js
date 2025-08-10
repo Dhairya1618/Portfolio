@@ -47,8 +47,8 @@ const Projects = () => {
       id: 5,
       title: "Task Management System",
       description: "A productivity tool for organizing, tracking, and collaborating on tasks with features like deadlines, notifications, and team management.",
-      technologies: ["React", "Firebase", "Material-UI"],
-      githubUrl: "https://github.com/Dhairya1618/Task-Management-App-React2.git",
+      technologies: ["PHP", "Material-UI"],
+      githubUrl: "https://github.com/Dhairya1618/Task-Management-System.git",
       liveUrl: "#",
       gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
       icon: "✅"
