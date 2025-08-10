@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-text">
-            <p>Dhairya Katkoriyat</p>
-            <p>&copy; 2024 All rights reserved.</p>
+            <p>Dhairya Katkoriya</p>
+            <p>&copy; 2025 All rights reserved.</p>
           </div>
           <div className="footer-links">
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
