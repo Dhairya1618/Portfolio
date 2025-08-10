@@ -59,12 +59,11 @@
   transition: all 0.3s ease;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
-  
+
   .nav {
     position: absolute;
     top: 100%;
@@ -78,19 +77,19 @@
     visibility: hidden;
     transition: all 0.3s ease;
   }
-  
+
   .nav.nav-open {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
   }
-  
+
   .nav ul {
     flex-direction: column;
     padding: 2rem;
     gap: 1rem;
   }
-  
+
   .nav button {
     width: 100%;
     text-align: left;

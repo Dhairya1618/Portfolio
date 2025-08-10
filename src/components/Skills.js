@@ -26,29 +26,25 @@ const Skills = () => {
   ];
 
   return (
-    <section className="skills" id="skills">
+    <section id="skills" className="skills">
       <div className="container">
-        <h1>Skills & Technologies</h1>
-        <h2>
+        <h2 className="section-title">Skills & Technologies</h2>
+        <p className="section-description">
           I'm constantly learning and expanding my skill set. Here are the technologies
           I work with regularly.
-        </h2>
-        <br />
+        </p>
         <div className="skills-grid">
           {skillCategories.map((category, index) => (
             <div key={index} className="skill-category">
               <h3>{category.title}</h3>
               <div className="skills-list">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="skill-item">
-                    {skill}
-                  </div>
+                  <span key={skillIndex} className="skill-item">{skill}</span>
                 ))}
               </div>
             </div>
           ))}
         </div>
-
         <div className="experience-stats">
           <div className="stat">
             <h4>Fresher</h4>

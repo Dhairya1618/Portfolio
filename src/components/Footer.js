@@ -7,12 +7,13 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-text">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-            <p>Built with React.js and passion for clean code.</p>
+            <p>Dhairya Katkoriyat</p>
+            <p>&copy; 2024 All rights reserved.</p>
           </div>
           <div className="footer-links">
-            <a href="https://www.linkedin.com/in/dhairya-katkoriya-559b341b9/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/Dhairya1618" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="mailto:dhairya.bk2204@gmail.com">Email</a>
           </div>
         </div>
       </div>

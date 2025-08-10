@@ -10,7 +10,8 @@ const Projects = () => {
       technologies: ["React", "Node.js", "Hyperledger Fabric", "Blockchain"],
       githubUrl: "https://github.com/Dhairya1618/Hyperledger_HealthInsurance.git",
       liveUrl: "#",
-      imageUrl: "public\hospital-management.png"
+      gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      icon: "🏥"
     },
     {
       id: 2,
@@ -19,7 +20,8 @@ const Projects = () => {
       technologies: ["Python", "TensorFlow", "Keras", "LSTM", "Transformers"],
       githubUrl: "#",
       liveUrl: "#",
-      imageUrl: ""
+      gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      icon: "📊"
     },
     {
       id: 3,
@@ -28,7 +30,8 @@ const Projects = () => {
       technologies: ["Python", "NLTK", "scikit-learn", "Pandas", "NLP"],
       githubUrl: "https://github.com/ReevaShenoy/Sentiment-Analysis.git",
       liveUrl: "#",
-      imageUrl: "public\sentiment-analysis.png"
+      gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      icon: "💬"
     },
     {
       id: 4,
@@ -37,7 +40,8 @@ const Projects = () => {
       technologies: ["React Native", "Google Maps API", "Accessibility", "Mobile"],
       githubUrl: "https://github.com/Dhairya1618/Inclusive-Design-for-Public-Transportation.git",
       liveUrl: "#",
-      imageUrl: "public\inclusive-navigation-system.png"
+      gradient: "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      icon: "🗺️"
     },
     {
       id: 5,
@@ -46,7 +50,8 @@ const Projects = () => {
       technologies: ["React", "Firebase", "Material-UI"],
       githubUrl: "https://github.com/Dhairya1618/Task-Management-App-React2.git",
       liveUrl: "#",
-      imageUrl: "public\task-management-system.png"
+      gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+      icon: "✅"
     }
   ];
 
@@ -61,14 +66,14 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map(project => (
             <div key={project.id} className="project-card">
-              <div className="project-image">
-                {project.imageUrl ? (
-                  <img src={project.imageUrl} alt={project.title} />
-                ) : (
-                  <div className="image-placeholder">
-                    <span>Project Screenshot</span>
-                  </div>
-                )}
+              <div className="project-header" style={{ background: project.gradient }}>
+                <div className="project-number">0{project.id}</div>
+                <div className="project-icon">{project.icon}</div>
+                <div className="tech-preview">
+                  {project.technologies.slice(0, 2).map((tech, index) => (
+                    <span key={index} className="mini-tech">{tech}</span>
+                  ))}
+                </div>
               </div>
               <div className="project-info">
                 <h3>{project.title}</h3>
@@ -79,10 +84,20 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a href={project.githubUrl} className="btn secondary" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={project.githubUrl} 
+                    className="btn secondary" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                     GitHub
                   </a>
-                  <a href={project.liveUrl} className="btn primary" target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={project.liveUrl} 
+                    className="btn primary" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                     Live Demo
                   </a>
                 </div>
