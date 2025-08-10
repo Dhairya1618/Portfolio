@@ -18,7 +18,7 @@ const Projects = () => {
       title: "LSTM and Transformer Model Classification for Stock Market",
       description: "A machine learning project implementing LSTM and Transformer models to classify and predict stock market trends using historical data and technical indicators.",
       technologies: ["Python", "TensorFlow", "Keras", "LSTM", "Transformers"],
-      githubUrl: "#",
+      githubUrl: "https://link.springer.com/chapter/10.1007/978-3-031-95099-5_9#Abs1",
       liveUrl: "#",
       gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
       icon: "📊"
@@ -47,7 +47,7 @@ const Projects = () => {
       id: 5,
       title: "Task Management System",
       description: "A productivity tool for organizing, tracking, and collaborating on tasks with features like deadlines, notifications, and team management.",
-      technologies: ["PHP", "Material-UI"],
+      technologies: ["PHP", "Material-UI", "HTML", "CSS", "Javascript"],
       githubUrl: "https://github.com/Dhairya1618/Task-Management-System.git",
       liveUrl: "#",
       gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
@@ -56,51 +56,46 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="projects">
+    <section className="projects" id="projects">
       <div className="container">
         <h2 className="section-title">My Projects</h2>
         <p className="section-description">
-          Here are some of the projects I've worked on. Each project represents a unique challenge 
-          and showcases different aspects of my development skills.
+          Here are some of the projects I've worked on. Each project represents a unique
+          challenge and showcases different aspects of my development skills.
         </p>
         <div className="projects-grid">
-          {projects.map(project => (
-            <div key={project.id} className="project-card">
-              <div className="project-header" style={{ background: project.gradient }}>
+          {projects.map((project) => (
+            <div className="project-card" key={`project-${project.id}`}>
+              <div
+                className="project-header"
+                style={{ background: project.gradient }}
+              >
                 <div className="project-number">0{project.id}</div>
                 <div className="project-icon">{project.icon}</div>
-                <div className="tech-preview">
-                  {project.technologies.slice(0, 2).map((tech, index) => (
-                    <span key={index} className="mini-tech">{tech}</span>
-                  ))}
-                </div>
               </div>
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
                 <div className="technologies">
                   {project.technologies.map((tech, index) => (
-                    <span key={index} className="tech-tag">{tech}</span>
+                    <span key={`${project.id}-tech-${index}`} className="tech-tag">
+                      {tech}
+                    </span>
                   ))}
                 </div>
-                <div className="project-links">
-                  <a 
-                    href={project.githubUrl} 
-                    className="btn secondary" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                  <a 
-                    href={project.liveUrl} 
-                    className="btn primary" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    Live Demo
-                  </a>
-                </div>
+              </div>
+              <div className="project-links-spacer"></div>
+              <div className="project-links">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={project.githubUrl === "#" ? "" : "github-link"}
+                  disabled={project.githubUrl === "#"}
+                >
+                  GitHub
+                </a>
+
               </div>
             </div>
           ))}

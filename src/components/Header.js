@@ -20,17 +20,38 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h2>Dhairya Katkoriya</h2>
+          <h2>Portfolio</h2>
         </div>
+        
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul>
-            <li><button onClick={() => scrollToSection('about')}>About</button></li>
-            <li><button onClick={() => scrollToSection('skills')}>Skills</button></li>
-            <li><button onClick={() => scrollToSection('projects')}>Projects</button></li>
-            <li><button onClick={() => scrollToSection('contact')}>Contact</button></li>
+            <li>
+              <button onClick={() => scrollToSection('about')}>
+                About
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('skills')}>
+                Skills
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('projects')}>
+                Projects
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('contact')}>
+                Contact
+              </button>
+            </li>
           </ul>
         </nav>
-        <div className="hamburger" onClick={toggleMenu}>
+        
+        <div 
+          className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+          onClick={toggleMenu}
+        >
           <span></span>
           <span></span>
           <span></span>
